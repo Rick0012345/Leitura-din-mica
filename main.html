@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leitura Dinâmica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>
+    Leitura Dinâmica
+    <span id="infoIcon" title="Clique para mais informações">ℹ️</span>
+  </h1>
+
+  <div id="instructions" style="display: none;">
+    <p>Bem-vindo ao Leitura Dinâmica! Aqui está como usar:</p>
+    <ol>
+      <li>Cole ou digite o texto na caixa de entrada.</li>
+      <li>Escolha a velocidade de leitura ajustando as palavras por segundo.</li>
+      <li>Clique em "Iniciar Leitura" para começar a exibição dinâmica das palavras.</li>
+      <li>Quando o texto acabar, a palavra "Fim!" será exibida.</li>
+    </ol>
+    <button id="closeInstructions">Fechar</button>
+  </div>
+
+  <textarea id="inputText" placeholder="Cole ou digite seu texto aqui..."></textarea>
+  <div id="controls">
+    <label for="speed">Velocidade (palavras por segundo):</label>
+    <input type="number" id="speed" value="3" min="1" max="10">
+    <button id="start">Iniciar Leitura</button>
+  </div>
+  <div id="display">...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
